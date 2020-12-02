@@ -1,0 +1,5 @@
+.title {
+  font-weight: bold;
+  font-size: var(--font-title);
+  line-height: var(--font-title-height);
+}

@@ -1,0 +1,21 @@
+{
+  "name": "focused-task",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "5.3.0",
+    "electron-installer-zip": "^0.1.2",
+    "electron-packager": "15.1.0",
+    "electron-packager-languages": "^0.4.0"
+  },
+  "main": "./main.js",
+  "scripts": {
+    "dev-react": "./bin/react-start",
+    "dev-electron": "ELECTRON_START_URL=http://localhost:3000 ./bin/electron-start .",
+    "dev": "BROWSER=none concurrently \"yarn dev-react\" \"yarn dev-electron\" --kill-others",
+    "app": "./bin/react-build && ./bin/electron-start",
+    "test": "./bin/test",
+    "build": "./bin/react-build && node ./bin/electron-package.js"
+  }
+}

@@ -1,0 +1,9 @@
+.title {
+  font-weight: bold;
+  font-size: var(--font-subtitle);
+  line-height: var(--font-subtitle-height);
+}
+
+.content {
+  padding-top: var(--m);
+}

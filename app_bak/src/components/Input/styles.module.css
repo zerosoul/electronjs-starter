@@ -1,0 +1,26 @@
+.input {
+  -moz-osx-font-smoothing: inherit;
+  -webkit-font-smoothing: inherit;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  flex: 1 1 100%;
+  font-family: inherit;
+  font-size: var(--font-text);
+  line-height: var(--font-text-height);
+  padding: 1px 5px 2px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  position: relative;
+  top: -4px;
+  left: -6px;
+}
+
+.textarea {
+  background: var(--box-background);
+  border: var(--border);
+  height: 19px;
+  outline: none;
+  resize: none !important;
+}
